@@ -1,6 +1,12 @@
 package com.Srinadh.hospitalManagement.service;
 
+import com.Srinadh.hospitalManagement.dto.AppointmentResponseDto;
+import com.Srinadh.hospitalManagement.dto.CreateAppointmentRequestDto;
 import com.Srinadh.hospitalManagement.entity.Appointment;
+import com.Srinadh.hospitalManagement.entity.Doctor;
+import com.Srinadh.hospitalManagement.entity.Patient;
+import com.Srinadh.hospitalManagement.repository.AppointmentRepository;
+import com.Srinadh.hospitalManagement.repository.DoctorRepository;
 import com.Srinadh.hospitalManagement.repository.PatientRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;

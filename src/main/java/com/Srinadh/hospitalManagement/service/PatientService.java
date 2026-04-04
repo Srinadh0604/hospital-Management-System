@@ -1,5 +1,7 @@
 package com.Srinadh.hospitalManagement.service;
 
+import com.Srinadh.hospitalManagement.dto.PatientResponseDto;
+import com.Srinadh.hospitalManagement.entity.Patient;
 import com.Srinadh.hospitalManagement.repository.PatientRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;

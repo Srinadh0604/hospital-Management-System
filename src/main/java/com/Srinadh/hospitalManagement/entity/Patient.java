@@ -1,10 +1,11 @@
 package com.Srinadh.hospitalManagement.entity;
 
+import com.Srinadh.hospitalManagement.entity.type.BloodGroupType;
 import jakarta.persistence.*;
 import lombok.*;
-import org.apache.catalina.User;
-import org.hibernate.annotations.CreationTimestamp;
 
+import org.hibernate.annotations.CreationTimestamp;
+import com.Srinadh.hospitalManagement.entity.User;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;

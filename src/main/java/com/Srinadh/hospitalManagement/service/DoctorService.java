@@ -1,4 +1,11 @@
 package com.Srinadh.hospitalManagement.service;
+import com.Srinadh.hospitalManagement.dto.DoctorResponseDto;
+import com.Srinadh.hospitalManagement.dto.OnboardDoctorRequestDto;
+import com.Srinadh.hospitalManagement.entity.Doctor;
+import com.Srinadh.hospitalManagement.entity.User;
+import com.Srinadh.hospitalManagement.entity.type.RoleType;
+import com.Srinadh.hospitalManagement.repository.DoctorRepository;
+import com.Srinadh.hospitalManagement.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

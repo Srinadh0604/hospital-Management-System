@@ -1,6 +1,8 @@
 package com.Srinadh.hospitalManagement.repository;
 
+import com.Srinadh.hospitalManagement.dto.BloodGroupCountResponseEntity;
 import com.Srinadh.hospitalManagement.entity.Patient;
+import com.Srinadh.hospitalManagement.entity.type.BloodGroupType;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,7 +29,7 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
     @Query("select p from Patient p where p.birthDate > :birthDate")
     List<Patient> findByBornAfterDate(@Param("birthDate") LocalDate birthDate);
 
-    @Query("select new com.codingshuttle.youtube.hospitalManagement.dto.BloodGroupCountResponseEntity(p.bloodGroup," +
+    @Query("select new com.Srinadh.hospitalManagement.dto.BloodGroupCountResponseEntity(p.bloodGroup," +
             " Count(p)) from Patient p group by p.bloodGroup")
 //    List<Object[]> countEachBloodGroupType();
     List<BloodGroupCountResponseEntity> countEachBloodGroupType();
@@ -46,3 +48,4 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
     List<Patient> findAllPatientWithAppointment();
 
 
+}
