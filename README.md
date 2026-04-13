@@ -4,18 +4,24 @@ Hospital Management System
 🚀 A secure and scalable backend system designed to streamline hospital operations, including patient management, appointments, and role-based access — built with modern authentication and clean architecture principles.
 
 ✨ Key Features
+
 🔐 Secure Authentication System
 JWT-based authentication for stateless sessions
 Google OAuth2 login integration for seamless access
+
 👥 Role-Based Access Control (RBAC)
-Admin, Doctor, and Patient roles with controlled permissions
+Admin, Doctor, and Patient roles with controlled permissions 
+
 📅 Appointment Management
 Book, update, and manage appointments efficiently
+
 🏥 Hospital Workflow Management
 Patient records, doctor interactions, and scheduling
+
 🔒 Security Best Practices
 Environment variables (.env) for sensitive data
 No hardcoded secrets
+
 🧱 Clean Architecture
 Controller → Service → Repository layered design
 🛠️ Tech Stack
@@ -23,6 +29,7 @@ Backend: Java, Spring Boot
 Security: Spring Security, JWT, OAuth2
 Database: PostgreSQL
 Build Tool: Maven
+
 🔑 Authentication Flow
 JWT Flow:
 User logs in with credentials
@@ -38,26 +45,33 @@ User selects Google login
 Redirected to Google authentication page
 On success, backend receives user info
 JWT token is generated and returned
+
 📡 API Documentation
+
 🔐 Auth Endpoints
 Method	Endpoint	Description
 POST	/api/auth/login	Login with credentials
 GET	/api/auth/oauth2	Google OAuth2 login
+
 👤 Patient Endpoints
 Method	Endpoint	Description
 GET	/api/patients	Get all patients
 POST	/api/patients	Add new patient
 GET	/api/patients/{id}	Get patient by ID
+
 👨‍⚕️ Doctor Endpoints
 Method	Endpoint	Description
 GET	/api/doctors	Get all doctors
 POST	/api/doctors	Add doctor
+
 📅 Appointment Endpoints
 Method	Endpoint	Description
 POST	/api/appointments	Create appointment
 GET	/api/appointments	View appointments
 PUT	/api/appointments/{id}	Update appointment
+
 ⚙️ Setup Instructions
+
 🧩 Prerequisites
 Java 17+
 Maven
@@ -92,6 +106,7 @@ mvn spring-boot:run
 Access API
 
 http://localhost:8080/api
+
 📦 Sample Requests & Responses
 🔐 Login Request
 POST /api/auth/login
@@ -113,7 +128,9 @@ POST /api/appointments
 "date": "2026-04-15",
 "time": "10:30"
 }
+
 📁 Project Structure
+
 src/main/java/com/project/
 │
 ├── controller/        # REST Controllers
@@ -122,16 +139,7 @@ src/main/java/com/project/
 ├── entity/            # JPA entities
 ├── security/          # JWT & OAuth configs
 ├── config/            # App configurations
-└── exception/         # Global exception handling
-🚀 Future Enhancements
-📊 Dashboard with analytics
-📧 Email/SMS notifications for appointments
-📱 Frontend integration (React / Angular)
-🧾 Medical history tracking
-🧠 AI-based disease prediction (next-level upgrade 😎)
-🌟 Contribution
-
-
+└── exception/         # Global exception handling 
 
 📜 License
 
